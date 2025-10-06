@@ -51,7 +51,7 @@ export default function Hero() {
             <img
               src="/images/logo-2.jpg"
               alt="서면한의원 로고"
-              className="h-16 w-16 object-cover rounded-full"
+              className="h-16 w-16 object-cover"
             />
             <h1 className="font-nanum text-5xl md:text-7xl leading-tight drop-shadow-lg">
               {clinicInfo.name}
