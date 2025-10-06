@@ -24,9 +24,9 @@ export const clinicInfo = {
 
   contact: {
     phone: "051-816-1700",
-    phoneDisplay: "051-816-1700",
+    phoneDisplay: "TEL.(051)816-1700",
     address: "부산광역시 부산진구 중앙대로 767",
-    addressDetail: "4층 서면한의원",
+    addressDetail: "부전빌딩 4층 서면한의원",
     email: "seomyeon@clinic.com" // 있으면 바꾸세요
   },
 
