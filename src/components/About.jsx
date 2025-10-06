@@ -158,7 +158,7 @@ export default function About() {
                 href={`tel:${clinicInfo.contact.phone}`}
                 className="flex-1 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold text-center hover:bg-blue-50 transition shadow-lg"
               >
-                📞 전화 예약
+                ☎︎ 전화 예약
               </a>
             </div>
           </div>

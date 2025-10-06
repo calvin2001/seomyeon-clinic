@@ -3,7 +3,7 @@ import { clinicInfo } from '../data/clinicInfo'
 export default function Services() {
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id='services'>
       <div className="container mx-auto px-6">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">

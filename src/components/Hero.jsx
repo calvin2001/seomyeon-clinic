@@ -20,7 +20,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="hero-container relative">
+    <section className="hero-container relative" id="hero">
       {/* Background Slides - 한의원 관련 이미지들 */}
       <div
         className="hero-slide active"
@@ -73,27 +73,27 @@ export default function Hero() {
               style={{ backgroundColor: "#30588C" }}
               className=" hover:bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
             >
-              📞 {clinicInfo.contact.phoneDisplay}
+              ☎︎ {clinicInfo.contact.phoneDisplay}
             </a>
             <button
             style={{ color: "#30588C" }}
             className="bg-white/90 hover:bg-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
             onClick={() => window.location.href = clinicInfo.map}
             >
-             📍 오시는 길
+             ◼︎ 오시는 길
             </button>
           </div>
 
           {/* 진료 시간 미리보기 */}
           <div className="mt-12 space-y-2 text-sm md:text-base backdrop-blur-sm bg-black/20 inline-block px-8 py-4 rounded-lg">
             <p className="text-gray-200">
-              📅 {clinicInfo.hours.type1.days}: {clinicInfo.hours.type1.time}
+              ⏱︎ {clinicInfo.hours.type1.days}: {clinicInfo.hours.type1.time}
             </p>
             <p className="text-gray-200">
-              📅 {clinicInfo.hours.type2.days}: {clinicInfo.hours.type2.time}
+              ⏱︎ {clinicInfo.hours.type2.days}: {clinicInfo.hours.type2.time}
             </p>
             <p className="text-red-300 font-semibold">
-              🚫 {clinicInfo.hours.closed}
+              ✖︎ {clinicInfo.hours.closed}
             </p>
           </div>
 

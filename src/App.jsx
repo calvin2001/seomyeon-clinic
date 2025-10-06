@@ -3,6 +3,7 @@ import About from './components/About'
 import Services from './components/Services'
 import Location from './components/Location'
 import Footer from './components/Footer'
+import Navigation from './components/Navigation'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Services />
       <Location />
       <Footer />
+      <Navigation />
     </div>
   )
 }
