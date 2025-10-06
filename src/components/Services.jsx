@@ -23,7 +23,7 @@ export default function Services() {
           {clinicInfo.clinicalDepartments.map((dept) => (
             <div 
               key={dept.id}
-              className="bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-green-500 hover:shadow-lg transition-all duration-300"
+              className="bg-white border-2 border-gray-100 rounded-xl p-6 md:hover:border-green-500 md:hover:shadow-lg transition-all duration-300"
             >
               {/* 아이콘 */}
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-3xl mb-4">
@@ -61,7 +61,7 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href={`tel:${clinicInfo.contact.phone}`}
-                className="bg-white text-green-900 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition"
+                className="bg-white text-green-900 px-8 py-4 rounded-lg font-semibold md:hover:bg-green-50 transition"
               >
                 {clinicInfo.contact.phoneDisplay}
               </a>
