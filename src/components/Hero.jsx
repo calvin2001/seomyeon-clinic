@@ -78,7 +78,7 @@ export default function Hero() {
             <button
             style={{ color: "#30588C" }}
             className="bg-white/90 hover:bg-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
-            onClick={() => window.location.href = "https://map.naver.com/p/entry/place/1448579279?placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202510032012&locale=ko&svcName=map_pcv5&c=15.00,0,0,0,dh"}
+            onClick={() => window.location.href = clinicInfo.map}
             >
               📍 오시는 길  
             </button>

@@ -3,22 +3,23 @@ import { clinicInfo } from "../data/clinicInfo";
 export default function About() {
   return (
     <section
+      style={{ backgroundColor: "#30588C" }}
       id="about"
-      className="py-20 bg-gradient-to-b from-green-900 to-green-800 text-white"
+      className="py-20  text-white"
     >
       <div className="container mx-auto px-6">
         {/* 섹션 헤더 */}
         <div className="text-center mb-12">
-          <h2 className="text-base font-semibold text-green-300 mb-2">
+          <h2 className="text-base font-semibold text-blue-300 mb-2">
             전통 한의학
           </h2>
-          <p className="text-4xl font-bold">{clinicInfo.specialty.name}</p>
+          <p className="text-4xl font-bold font-nanum">25년 전통의 {clinicInfo.name}</p>
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* 왼쪽: 소개 텍스트 */}
           <div className="lg:w-1/2">
-            <h3 className="text-2xl font-bold mb-6 text-green-200">
+            <h3 className="text-2xl font-bold font-nanum mb-6 text-blue-200">
               우리의 치료 철학
             </h3>
 
@@ -34,9 +35,9 @@ export default function About() {
             </div>
 
             {/* 특징 리스트 */}
-            <div className="bg-green-800/50 backdrop-blur-sm rounded-lg p-6 mb-8">
-              <h4 className="text-xl font-semibold mb-4 text-green-200">
-                {clinicInfo.specialty.name}의 특징
+            <div className="bg-blue-800/50 backdrop-blur-sm rounded-lg p-6 mb-8">
+              <h4 className="text-xl font-semibold mb-4 text-blue-200">
+                {clinicInfo.name}의 특징
               </h4>
               <ul className="space-y-3">
                 {clinicInfo.specialty.features.map((feature, index) => (
@@ -65,10 +66,10 @@ export default function About() {
               {clinicInfo.stats.map((stat) => (
                 <div
                   key={stat.id}
-                  className="bg-green-800/70 backdrop-blur-sm p-4 rounded-lg text-center"
+                  className="bg-blue-800/70 backdrop-blur-sm p-4 rounded-lg text-center"
                 >
                   <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                  <div className="text-xs text-green-200">{stat.label}</div>
+                  <div className="text-xs text-blue-200">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -78,7 +79,7 @@ export default function About() {
           <div className="lg:w-1/2">
             <div className="relative rounded-xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800"
+                src="/images/inside.jpg"
                 alt="한의원 침 치료"
                 className="w-full h-auto aspect-[4/3] object-cover"
               />
@@ -91,7 +92,7 @@ export default function About() {
                   <div className="space-y-2 text-sm">
                     <p className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-green-400"
+                        className="w-5 h-5 text-blue-400"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -118,7 +119,7 @@ export default function About() {
 
                     <p className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-green-400"
+                        className="w-5 h-5 text-blue-400"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -134,7 +135,7 @@ export default function About() {
                     </p>
 
                     <div className="mt-4 pt-4 border-t border-white/20">
-                      <p className="font-semibold text-green-300 mb-1">
+                      <p className="font-semibold text-blue-300 mb-1">
                         진료 시간
                       </p>
                       <p className="text-xs text-gray-300">
@@ -155,7 +156,7 @@ export default function About() {
             <div className="mt-6 flex gap-4">
               <a
                 href={`tel:${clinicInfo.contact.phone}`}
-                className="flex-1 bg-white text-green-900 px-6 py-3 rounded-lg font-semibold text-center hover:bg-green-50 transition shadow-lg"
+                className="flex-1 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold text-center hover:bg-blue-50 transition shadow-lg"
               >
                 📞 전화 예약
               </a>
