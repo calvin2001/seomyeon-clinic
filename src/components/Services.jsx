@@ -52,7 +52,7 @@ export default function Services() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-green-900 to-green-700 rounded-2xl p-8 md:p-12 text-white">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold font-nanum mb-4">
               진료 예약 및 상담
             </h3>
             <p className="text-green-100 mb-8">

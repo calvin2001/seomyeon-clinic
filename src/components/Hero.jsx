@@ -80,7 +80,7 @@ export default function Hero() {
             className="bg-white/90 hover:bg-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-105"
             onClick={() => window.location.href = clinicInfo.map}
             >
-              📍 오시는 길  
+             📍 오시는 길
             </button>
           </div>
 
